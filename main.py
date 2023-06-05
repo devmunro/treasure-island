@@ -21,4 +21,33 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.") 
+print("Your mission is to find the treasure.")
+action = input("Do you go ashore on the north side of island, Y or N? ")
+if action == "Y":
+    action = input("Do you enter the Village you see, Y or N? ")
+    if action == "Y":
+        print("The villagers cook you alive")
+    else:
+        print("You are safe")
+        action = input("Do you go to the cave or the forest? cave or forest? ")
+        if action == "cave":
+            print("you enter the dark cave")
+            action = input("Do you go left or right tunnel? left or right? ")
+            if action == "left":
+                print("You are attacked by a bear")
+            else:
+                print("You find the treasure")
+        else:
+            print("you got lost and was never seen again") 
+else:
+    action = input("do you enter the dark cave, Y or N? ")
+    if action == "N":
+        print("You are attacked by a bear")
+    else:
+        print("you enter the dark cave")
+        action = input("Do you go left or right tunnel? left or right? ")
+        if action == "left":    
+            print("You are attacked by a bear")
+        else:
+            print("You find the treasure")
+
